@@ -4,7 +4,7 @@
 
 This mod is for the game Prison Architect. It aims to fix staff and prisoner directions not saving properly, resulting in losing them on save load.
 
-I didn't run into any issues during testing, so it should work fine. If you however do end up having any problems, don't be shy and share them, and in-case you know the answer said problem, why not pull request a fix?
+I didn't run into any issues during testing, so it should work fine. If you however do end up having any problems, don't be shy and share them, and in-case you know the answer to said problem, why not pull request a fix?
 
 ## Installation
 
