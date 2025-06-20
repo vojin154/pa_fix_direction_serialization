@@ -11,6 +11,13 @@ I didn't run into any issues during testing, so it should work fine. If you howe
 - Download the latest version under the releases section.
 - Then simply extract the .DLL and drop it in your games folder.
 
+**STEAM:**
+  - Open your Steam Library and find Prison Architect there. Right click on it and select properties.
+  - In the properties menu, go to the Files tab and click on Browse.
+  - That will open the games root folder, it should contain Prison Architect64.exe, which is where you drop the extracted .DLL.
+
+The .DLL wasn't made for other versions, and thus might not be compatible.
+
 ## Make your own version
 
 1. You should be able to either press the green button saying "Code" and press Download ZIP. Obviously a different way if you have your own.
