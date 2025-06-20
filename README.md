@@ -14,7 +14,7 @@ I didn't run into any issues during testing, so it should work fine. If you howe
 **STEAM:**
   - Open your Steam Library and find Prison Architect there. Right click on it and select properties.
   - In the properties menu, go to the Files tab and click on Browse.
-  - That will open the games root folder, it should contain Prison Architect64.exe, which is where you drop the extracted .DLL.
+  - That will open the games root folder, it should contain `Prison Architect64.exe`, which is where you drop the extracted .DLL.
 
 The .DLL wasn't made for other versions, and thus might not be compatible.
 
