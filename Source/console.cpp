@@ -3,7 +3,7 @@
 //TAKEN FROM SUPERBLT
 
 
-bool open_console = true;
+bool open_console = false;
 
 
 
