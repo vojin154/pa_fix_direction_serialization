@@ -3,7 +3,7 @@
 //TAKEN FROM SUPERBLT
 
 
-bool open_console = false;
+bool open_console = true;
 
 
 
@@ -70,6 +70,7 @@ void CConsole::openConsole()
 	if (!console)
 	{
 		console = new CConsole();
+		LOG_SUCCESS("CONSOLE LOADED!");
 	}
 }
 

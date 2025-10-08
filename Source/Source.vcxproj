@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="dxgi.asm">
+    <MASM Include="opengl32.asm">
       <FileType>Document</FileType>
     </MASM>
-    <None Include="dxgi.def" />
+    <None Include="opengl32.def" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="console.cpp" />
@@ -66,12 +66,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)Compiled\Files\</OutDir>
     <IntDir>$(SolutionDir)Compiled\Info\</IntDir>
-    <TargetName>dxgi</TargetName>
+    <TargetName>opengl32</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)Compiled\Files\</OutDir>
     <IntDir>$(SolutionDir)Compiled\Info\</IntDir>
-    <TargetName>dxgi</TargetName>
+    <TargetName>opengl32</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -88,7 +88,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <ModuleDefinitionFile>dxgi.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>opengl32.def</ModuleDefinitionFile>
       <AdditionalDependencies>$(ProjectDir)MinHook\bin\$(Configuration)\libMinHook.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -111,7 +111,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <ModuleDefinitionFile>dxgi.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>opengl32.def</ModuleDefinitionFile>
       <AdditionalDependencies>$(ProjectDir)MinHook\bin\$(Configuration)\libMinHook.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

@@ -4,7 +4,6 @@
 #include "function_hooks.h"
 
 static CConsole console;
-static Hooks hooks;
 
 HINSTANCE Main::getHandle() {
 	return GetModuleHandleA(NULL);
@@ -21,23 +20,8 @@ DWORD Main::getPid() {
 void Main::initialize() {
 	console.openConsole();
 
-	LOG("CONSOLE LOADED!");
-
-	if (!hooks.init()) {
-		LOG_ERROR("Failed to initialize Hooks!");
-		return;
-	}
-	else {
-		LOG("HOOKS INITIALIZED!");
-	}
-
-	if (MH_Initialize() != MH_OK) {
-		LOG_ERROR("Failed to initialize MinHook!");
-	}
-	else
-	{
-		LOG("MINHOOK INITIALIZED!");
-
+	if (hooks.init()) {
+		addressSignatureScan(this->executable);
 		hookFunctions(this->getBaseAddress());
 	}
 }

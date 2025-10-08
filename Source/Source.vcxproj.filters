@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="dxgi.def">
+    <None Include="opengl32.def">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -34,7 +34,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="dxgi.asm">
+    <MASM Include="opengl32.asm">
       <Filter>Resource Files</Filter>
     </MASM>
   </ItemGroup>

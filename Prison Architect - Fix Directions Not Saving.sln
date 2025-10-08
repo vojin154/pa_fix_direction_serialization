@@ -7,12 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Source", "Source\Source.vcx
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA71062D-9FC3-4E45-8CA9-6D78A0B1A84C}.Debug|x64.ActiveCfg = Debug|x64
-		{DA71062D-9FC3-4E45-8CA9-6D78A0B1A84C}.Debug|x64.Build.0 = Debug|x64
 		{DA71062D-9FC3-4E45-8CA9-6D78A0B1A84C}.Release|x64.ActiveCfg = Release|x64
 		{DA71062D-9FC3-4E45-8CA9-6D78A0B1A84C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
