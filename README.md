@@ -7,7 +7,7 @@ This mod is for the game Prison Architect. It aims to fix staff and prisoner dir
 ## Issues
 
   - I didn't run into any issues during testing, so it should work fine. If you however do end up having any problems, don't be shy and share them, and in-case you know the answer to said problem, why not pull request a fix?
-  - Before anything, make sure you got the [Visual Studio C++ Redistributables](https://aka.ms/vs/17/release/vc_redist.x64.exe) downloaded.
+  - Before anything, make sure you got the [Visual Studio C++ Redistributables](https://aka.ms/vs/17/release/vc_redist.x64.exe) downloaded. You need this only once!
 
 ## Uninstall
 
