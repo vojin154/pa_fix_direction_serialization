@@ -23,6 +23,9 @@ This mod is for the game Prison Architect. It aims to fix staff and prisoner dir
 
 **The games root folder - is the folder, that contains `Prison Architect64.exe`, which is where you drop the extracted .DLL**
 
+**Epic Games:**
+  - This mod is not available for the Epic Games version, as I don't have access to it.
+
 **STEAM:**
   - Open your Steam Library and find Prison Architect there. Right click on it and select properties.
   - In the properties menu, go to the Files tab and click on Browse.
@@ -34,7 +37,7 @@ This mod is for the game Prison Architect. It aims to fix staff and prisoner dir
     - The folder should contain `Prison Architect64.exe`. If it does, then drop the mods .DLL there.
   - **GOG Galaxy**
     - Open your GOG Galaxy library and find Prison Architect there. Right click on it and select manage installation, and then click on show folder.
-    - That will open the games root folder. 
+    - That will open the games root folder.
 
 ## Make your own version
 
