@@ -1,0 +1,18 @@
+# Ignore caches and intermediate files in .vs
+.vs/**/ipch/
+.vs/**/*.VC.db
+.vs/**/*.VC.db-shm
+.vs/**/*.VC.db-wal
+.vs/**/*.VC.opendb
+.vs/**/*.sln.docstates
+.vs/**/*.vsidx
+.vs/**/DocumentLayout.json
+.vs/**/DocumentLayout.backup.json
+
+# Keep solution user options
+#.vs/**/*.suo
+# Optional: keep .user files if you want
+# .vs/**/*.user
+
+# The directory that contains compiled stuff
+Compiled/

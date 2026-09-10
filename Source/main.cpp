@@ -1,40 +1,42 @@
-#include "main.h"
-#include "console.h"
-#include "hooks.h"
-#include "function_hooks.h"
+#include "main.hpp"
 
-static CConsole console;
+#include "console.hpp"
+#include "hooks.hpp"
+#include "function_hooks.hpp"
 
-HINSTANCE Main::getHandle() {
-	return GetModuleHandleA(NULL);
+static CConsole console{};
+
+
+HINSTANCE Main::GetHandle() {
+	return GetModuleHandle(nullptr);
 }
 
-uintptr_t Main::getBaseAddress() {
-	return (uintptr_t)this->getHandle();
+uintptr_t Main::GetBaseAddress() {
+	return reinterpret_cast<uintptr_t>(this->GetHandle());
 }
 
-DWORD Main::getPid() {
+DWORD Main::GetPid() {
 	return GetCurrentProcessId();
 }
 
-void Main::initialize() {
+
+void Main::Initialize() {
 	console.openConsole();
 
-	if (hooks.init()) {
-		addressSignatureScan(this->executable);
-		hookFunctions(this->getBaseAddress());
+	if (g_hooks.init()) {
+		hookFunctions(this->executable);
 	}
 }
 
-void Main::uninitialize() {
+void Main::Uninitialize() {
 	MH_DisableHook(MH_ALL_HOOKS);
 	MH_Uninitialize();
 }
 
+
 // Disabled
-void Main::update() {
-	/*if (GetAsyncKeyState(VK_F5) & 1)
-	{
+void Main::Update() {
+	/*if (GetAsyncKeyState(VK_F5) & 1) {
 		LOG("Pressed F5!");
 	}*/
 }

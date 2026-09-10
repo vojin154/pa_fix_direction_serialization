@@ -8,7 +8,7 @@
 // https://stackoverflow.com/questions/16500726/open-write-to-console-from-a-c-dll
 // Stack overflow post
 
-#include <windows.h>
+#include <Windows.h>
 #include <iostream>
 
 class CConsole

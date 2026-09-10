@@ -1,7 +1,9 @@
 .data
-extern PA : qword
+	extern external_target : qword
+
 .code
-RunASM proc
-jmp qword ptr [PA]
-RunASM endp
+	JumpToTarget proc
+		jmp qword ptr [external_target]
+	JumpToTarget endp
+
 end

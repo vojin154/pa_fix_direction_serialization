@@ -1,9 +1,9 @@
-#include "console.h"
+#include "console.hpp"
 
 //TAKEN FROM SUPERBLT
 
 
-bool open_console = false;
+bool open_console{ false };
 
 
 
@@ -87,7 +87,7 @@ std::ostream& LogTime(std::ostream& os)
 	return os;
 }
 
-const char* logType[3] = {
+constexpr const char* logType[3]{
 	"Log: ",
 	"Warn: ",
 	"Error: "
